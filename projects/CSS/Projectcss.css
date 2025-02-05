@@ -1,0 +1,19 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: brown;
+    background-color: bisque;
+}
+
+.minisection{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkred;
+}
+
+#header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkred;
+}
+.demphasize{
+    color: lightcoral;
+}
