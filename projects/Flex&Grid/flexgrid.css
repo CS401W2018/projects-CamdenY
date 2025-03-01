@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkolivegreen;
+    background-color: beige;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    display: block;
+    padding: 5px 10px;
+}
+
+.parent{
+    display: flex;
+    color: green;
+}
+
+aside{
+    display: flex;
+    flex-flow: column wrap;
+    width: 300px;
+    background-color: white;
+}
+
+main{
+    padding: 20px;
+}
+
+.caption{
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    font-size: 10px;
+    
+}
+
+.flexgrid{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+
+.linkgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px;
+}
+
+
