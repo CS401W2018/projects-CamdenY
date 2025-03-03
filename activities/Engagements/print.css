@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+header{
+    background-color: rgb(0, 227, 227);
+}
+
+header h1{
+    margin: 0;
+}
+nav{
+    display: none;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    border: thin solid black;
+    box-shadow: 3px 3px 3px black;
+    width: 250px
+}
+
+.card figure{
+    margin: 0;
+}
+
+.card img{
+    width:100%
+}

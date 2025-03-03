@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+header{
+    background-color: rgb(0, 227, 227);
+}
+
+header h1{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: palevioletred;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(247, 59, 122);
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(247, 59, 122);
+    background-color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    border: thin solid black;
+    box-shadow: 3px 3px 3px black;
+    width: 250px
+}
+
+.card figure{
+    margin: 0;
+}
+
+.card img{
+    width:100%
+}
