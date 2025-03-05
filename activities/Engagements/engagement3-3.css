@@ -48,3 +48,26 @@ nav a:hover{
 .card img{
     width:100%
 }
+
+@media ONLY screen AND (max-width: 600px){
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature{
+        order:-1;
+    }
+    
+    nav{
+        flex-direction: column;
+    }
+
+    nav a{
+        border-bottom: thin solid white;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+}
