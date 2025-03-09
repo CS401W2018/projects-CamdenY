@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(83, 168, 220);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+nav{
+    display: none;
+    justify-content: space-between;
+}
+
+nav a{
+    flex-wrap: wrap;
+    display: block;
+    padding: 5px 10px;
+    color: rgb(83, 168, 220);
+    background-color: white;
+}
+
+nav a:hover{
+    background-color: rgb(83, 168, 220);
+    color:white;
+    text-decoration: none;
+}
+
+.parent{
+    display: flex;
+}
+
+aside{
+    flex-flow: column wrap;
+    width: 30%;
+    background-color: white;
+    color: black;
+    margin: 5px;
+}
+
+figcaption{
+    font-size: 10px;
+}
+.img{
+    flex-flow: column wrap;
+    width: 100%;
+    margin-left: 0px;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+aside img{
+    width: 100%;
+}
+
+.columnwrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.card{
+    border: thin solid black;
+    box-shadow: 3px 3px 3px black;
+    width: 250px;
+}
+
+.card h2{
+    background-color: black;
+    margin: 5px;
+}
+
+.card img{
+    width:100%
+}
