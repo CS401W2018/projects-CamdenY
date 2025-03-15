@@ -1,0 +1,47 @@
+body{
+    background-color: lavenderblush;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.parent{
+    display: flex;
+}
+
+aside{
+    width: 25%;
+    flex-flow: column wrap;
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 3px;
+}
+
+main{
+    flex: 1;
+}
+
+.stats{
+    border: 3px solid black;
+    box-shadow: 3px 3px 3px darkgray;
+    border-radius: 5px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    background-color: lightcoral;
+}
+
+
+.stats th, .stats td{
+    border: thin solid black;
+    padding: 1px;
+}
+
+.stats thead{
+    background-color: beige;
+    color: black;
+}
+
+.stats tbody tr:nth-child(odd){
+    background-color: lightcyan;
+}
+
