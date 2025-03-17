@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Form</title>
+    <link rel="stylesheet" href="engagement3-17.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design Site</h1>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <main>
+        <h1>Engagement - Form</h1>
+        <form action="processing.html" method="post">
+            <div>
+                First name: <input type="text" name="firstname" placeholder="First Name" id="First Name">
+            </div>
+            <div>
+                Email: <input type="email" name="email" id="email">
+            </div>
+            <div>
+                Password: <input type="password" name="password" id="pass">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CO">Colorado</option>
+                    <option value="HI">Hawaiʻi</option>
+                    <option value="CA">California</option>
+                </select>
+
+            </div>
+            <div>
+                <div>Year in School</div>
+                <label><input type="radio" name="year" value="Freshman">Freshman</label>
+                <label><input type="radio" name="year" value="Sophmore">Sophmore</label>
+                <label><input type="radio" name="year" value="Junior">Junior</label>
+                <label><input type="radio" name="year" value="Senior">Senior</label>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+        <h2>The form tag has an "action" attribute. What does it do?</h2>
+        <p>The action attribute is where the information of the form is being sent to. </p>
+        <h2>The form tag has a "method" attribute. What does it do?</h2>
+        <p>The method attribute dictates if the form changes the data on the server.</p>
+        <h2>What is the difference between a "POST" and a "GET"?</h2>
+        <p>Post updates a servers data while get retrieves it.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Camden Yuen</p>
+    </footer>
+</body>
+</html>
