@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Form Processing with JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Web Design Site</h1>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <main>
+        <form action="processing.html" id="myForm">
+            <div class="form-row">
+            First Name: <input type="text" name="first" id="FirstName" placeholder="First Name">
+            </div>
+            <div class="form-row">
+            Last Name: <input type="text" name="last" id="LastName" placeholder="Last Name">
+            </div>
+            <div class="form-row">
+            Password: <input type="password" name="password" id="Password">
+            </div>
+            <div class="form-row">
+            <label><input type="checkbox" name="remember" checked id="Remember"> Remember Me</label>
+            </div>
+            <div class="form-row">
+                Age: <input type="number" name="age" id="age">
+            </div>
+            <div class="radio-row">
+                <div>Class</div>
+                <label><input type="radio" name="year" value="Freshman">Freshman</label>
+                <label><input type="radio" name="year" value="Sophmore">Sophmore</label>
+                <label><input type="radio" name="year" value="Junior">Junior</label>
+                <label><input type="radio" name="year" value="Senior">Senior</label>
+            </div>
+            <div class="form-row">
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CO">Colorado</option>
+                    <option value="HI">Hawaiʻi</option>
+                    <option value="CA">California</option>
+                </select>
+            </div>
+            <div class="form-spacer">
+                <input type="submit">
+            </div>
+        </form>
+        <h1>Engagement - Form Processing with JavaScript</h1>
+        <h2>What is JavaScript? How did it get its name?</h2>
+        <p>JavaScript is a type of coding language used to add interactivity to websites. It got it's name from the Java programming language.</p>
+        <h2>What are the two ways you can run JavaScript?</h2>
+        <p>You can run Javascript through your console or the HTML file.</p>
+        <h2>What was the most popular front-end js library?</h2>
+        <p></p>
+        <h2>What is the most popular front-end js library today?</h2>
+        <p></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Camden Yuen</p>
+    </footer>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event){
+            event.preventDefault();
+            const first=document.getElementById("FirstName").value
+            const last=document.getElementById("LastName").value
+            const age=document.getElementById("age").value;
+
+            if(!first||!last){
+                alert("Please provide your full name")
+                return;
+            }
+
+            if(!age||age<18){
+                alert("You must be 18 years or older to submit this form")
+                return;
+            }
+
+            const data = {
+                FirstName: first,
+                LastName: last,
+                age: age
+            }
+            console.log(data);
+        })
+    </script>
+</body>
+</html>
