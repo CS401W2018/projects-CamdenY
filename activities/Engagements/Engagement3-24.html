@@ -64,36 +64,16 @@
         <p></p>
         <h2>What is the most popular front-end js library today?</h2>
         <p></p>
+        <h2>What is AJAX?</h2>
+        <p>AJAX prevents the default of creating a new HTML page, collects the data from the form and sends the data directly to the server. This allows data to be communicated from the page to the server without refreshing the page.</p>
+        <h2>Why do you put your JS Code in a separate file?</h2>
+        <p>You should put your JavaScript code into a different file to keep your file organized and in case you want to use that form on other pages. </p>
     </main>
 
     <footer>
         <p>&copy; 2025 Camden Yuen</p>
     </footer>
 
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function(event){
-            event.preventDefault();
-            const first=document.getElementById("FirstName").value
-            const last=document.getElementById("LastName").value
-            const age=document.getElementById("age").value;
-
-            if(!first||!last){
-                alert("Please provide your full name")
-                return;
-            }
-
-            if(!age||age<18){
-                alert("You must be 18 years or older to submit this form")
-                return;
-            }
-
-            const data = {
-                FirstName: first,
-                LastName: last,
-                age: age
-            }
-            console.log(data);
-        })
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
