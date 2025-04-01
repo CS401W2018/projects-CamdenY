@@ -20,7 +20,7 @@
     </nav>
 
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" id="myForm">
             <fieldset>
                 <legend>Create an Account</legend>
                 <div class="form-row">
@@ -33,7 +33,7 @@
                     Password: <input type="password" name="password" placeholder="Must be longer than 8 characters." id="password">
                 </div>
                 <div class="form-row">
-                    Re-enter password: <input type="password" name="re-password" id="re-password">
+                    Re-enter password: <input type="password" name="repassword" id="repassword">
                 </div>
                 <div class="form-row">
                     <label for="email">Email</label>
@@ -54,8 +54,7 @@
                     </select>
                 </div>
                 <div class="form-row">
-                    <label for="birthdate">Date of birth:</label>
-                    <input type="date" id="birthdate" name="birthdate">
+                    Age: <input type="number" name="age" id="age" placeholder="Must be 18 years or older.">
                 </div>
                 <div class="radio-row">
                     <div>Major:</div>
@@ -82,5 +81,7 @@
     <footer>
         <p>&copy; 2025 Camden Yuen</p>
     </footer>
+
+    <script src="form.js"></script>
 </body>
 </html>
