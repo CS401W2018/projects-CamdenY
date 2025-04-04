@@ -2,3 +2,11 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    padding: 5px;
+}
