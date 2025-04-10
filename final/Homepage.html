@@ -12,11 +12,13 @@
     </header>
 
     <nav>
+        <a href="Homepage.html" class="onpage">Home</a>
         <a href="WesternRelations.html">Western Foreign Relations</a>
         <a href="KingKalakaua.html">King Kalākaua</a>
         <a href="Bayonet.html">The Bayonet Constitution</a>
         <a href="QueenLiliuokalani.html">Queen Liliʻuokalani</a>
         <a href="Overthrow.html">The Overthrow</a>
+        <a href="BibliographyAndFurther.html">Bibliography and Further Sources</a>
     </nav>
 
     <main>
@@ -32,10 +34,37 @@
         <p>This page will summarize the years Liliʻuokalani ruled after her brother's death, and how she attempted to restore the previous constitution in spite of resistance.</p>
         <h2>The Overthrow</h2>
         <p>This section will go into great detail to show the timeline of the U.S backed coup d'etat of the Hawaiian Kingdom.</p>
+        <div class="form">
+            <h1>Got a question? Send one and I can get back to you.</h1>
+            <form action="processing.html" id="myForm">
+                <fieldset>
+                    <legend>Ask a question!</legend>
+                    <div class="form-row">
+                        Name: <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-row">    
+                        Age: <input type="number" name="age" id="age">
+                    </div>
+                    <div class="form-row">
+                        <label for="question">Question:</label>
+                        <textarea name="question" id="question"></textarea>
+                    </div class="form-row">
+                        Are you okay with your question being answered publicly? <input type="checkbox">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-spacer"></div>
+                        <input type="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer>
         &copy; 2025 Camden Yuen
     </footer>
+    
+    <script src="form.js"></script>
+
 </body>
 </html>

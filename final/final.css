@@ -1,0 +1,86 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    padding: 5px;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+nav a:hover{
+    color: lightblue;
+}
+fieldset{
+    background-color: lightblue;
+}
+
+.table{
+    border: 3px solid black;
+    box-shadow: 3px 3px 3px darkgray;
+    border-radius: 5px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.table th, .table td{
+    border: thin solid black;
+    padding: 3px;
+}
+legend{
+    background-color: darkblue;
+    padding: 10px;
+    color: white;
+}
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+figcaption{
+    font-size: 10px;
+}
+
+.onpage{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.figright{
+    display: flex;
+    justify-content: space-around;
+}
+.small{
+    font-size: 10px;
+}
+
+
+@media ONLY screen AND (max-width: 600px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav a{
+        border-bottom: thin solid white;
+        display: block;
+        background-color: white;
+        padding: 5px;
+    }
+}
