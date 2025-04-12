@@ -71,7 +71,23 @@ figcaption{
     font-size: 10px;
 }
 
-
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+.button a{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.75s;
+    transition-timing-function: ease-in-out;
+}
+.button a:hover{
+    background-color: lightblue;
+}
 @media ONLY screen AND (max-width: 600px){
     nav{
         flex-direction: column;
@@ -80,7 +96,18 @@ figcaption{
     nav a{
         border-bottom: thin solid white;
         display: block;
-        background-color: white;
+        background-color: blue;
+        color: white;
         padding: 5px;
     }
+    
+    .form-row{
+        flex-direction: column;
+    }
+
+    .form-row label{
+        text-align: left;
+    }
+
+
 }
